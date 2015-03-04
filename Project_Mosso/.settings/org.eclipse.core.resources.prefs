@@ -1,2 +1,4 @@
 eclipse.preferences.version=1
 encoding//polls/admin.py=UTF-8
+encoding//polls/urls.py=UTF-8
+encoding//polls/views.py=UTF-8
