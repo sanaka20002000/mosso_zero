@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}書籍の一覧{% endblock title %}
+{% block title %}タイトル{% endblock title %}
 
 {% block extrahead %}
 <style>
@@ -11,16 +11,16 @@ table {
 {% endblock %}
 
 {% block content %}
-    <h3 class="page-header">書籍の一覧</h3>
-    <a href="{% url 'cms:book_add' %}" class="btn btn-default btn-sm">追加</a>
+    <h3 class="page-header">a</h3>
+    <a href="{% url 'cms:book_add' %}" class="btn btn-default btn-sm">b</a>
     <table class="table table-striped table-bordered">
       <thead>
         <tr>
           <th>ID</th>
-          <th>書籍名</th>
-          <th>出版社</th>
-          <th>ページ数</th>
-          <th>操作</th>
+          <th>隴厄ｽｸ驍�讎企倹</th>
+          <th>陷�ｽｺ霑夊ご�ｽ､�ｽｾ</th>
+          <th>郢晏｣ｹ�ｿｽ�ｽｼ郢ｧ�ｽｸ隰ｨ�ｽｰ</th>
+          <th>隰ｫ蝣ｺ�ｽｽ�ｿｽ</th>
         </tr>
       </thead>
       <tbody>
@@ -31,8 +31,8 @@ table {
           <td>{{ book.publisher }}</td>
           <td>{{ book.page }}</td>
           <td>
-            <a href="{% url 'cms:book_mod' book_id=book.id %}" class="btn btn-default btn-sm">修正</a>
-            <a href="{% url 'cms:book_del' book_id=book.id %}" class="btn btn-default btn-sm">削除</a>
+            <a href="{% url 'cms:book_mod' book_id=book.id %}" class="btn btn-default btn-sm">闖ｫ�ｽｮ雎�ｽ｣</a>
+            <a href="{% url 'cms:book_del' book_id=book.id %}" class="btn btn-default btn-sm">陷台ｼ∝求</a>
           </td>
         </tr>
         {% endfor %}

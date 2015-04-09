@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'cms',
     'bootstrapform',
+    'mosso',
 )
 
 MIDDLEWARE_CLASSES = (
